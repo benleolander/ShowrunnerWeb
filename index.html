@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Showrunner — File your media like you mean it</title>
+  <meta name="description" content="Showrunner is the missing step between a messy downloads folder and a beautiful Jellyfin library. A native macOS app that identifies, renames and files your movies and TV shows to Jellyfin's exact conventions — with artwork staged and nothing touched until you say so.">
+  <meta name="theme-color" content="#000B25">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/showrunner-icon.png">
+
+  <!-- Social / Open Graph — TODO: set your real domain and add a 1200×630 PNG at assets/og-image.png -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Showrunner — File your media like you mean it">
+  <meta property="og:description" content="The missing step between a messy downloads folder and a beautiful Jellyfin library. Native macOS, sandboxed, no fuss.">
+  <meta property="og:image" content="assets/showrunner-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top"><img src="assets/favicon.svg" alt="">Showrunner</a>
+      <div class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#naming">Naming</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-cta">
+        <span class="nav-pill"><span class="dot"></span>Coming soon</span>
+      </div>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <header class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span>Native macOS app for Jellyfin</span>
+          <h1>File your media <span class="gradient-text">like you mean it.</span></h1>
+          <p class="lead">
+            The missing step between a messy downloads folder and a beautiful Jellyfin
+            library. Drop in release-named files — Showrunner identifies each title,
+            renames to Jellyfin's exact conventions, and stages the artwork. Nothing
+            touches your disk until you press <strong>Process All</strong>.
+          </p>
+          <div class="hero-cta">
+            <span class="appstore" role="img" aria-label="Coming soon to the Mac App Store">
+              <svg class="apple" viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <span class="lines"><small>Coming soon to the</small><strong>Mac App Store</strong></span>
+              <span class="soon">Soon</span>
+            </span>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+          <div class="hero-meta">
+            <span><svg viewBox="0 0 24 24"><path d="M5 12l4.5 4.5L19 7"/></svg>Built for macOS 26</span>
+            <span><svg viewBox="0 0 24 24"><path d="M5 12l4.5 4.5L19 7"/></svg>Native &amp; sandboxed</span>
+            <span><svg viewBox="0 0 24 24"><path d="M5 12l4.5 4.5L19 7"/></svg>No Electron, no command line</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <span class="glow"></span>
+          <!-- Hero artwork — swap this src for your rendered PNG (e.g. assets/app-icon.png) when ready -->
+          <img src="assets/showrunner-icon.png" alt="Showrunner app icon — a stacked set of media cards with a film strip" width="420" height="420">
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== PITCH ===================== -->
+    <section class="pitch" aria-label="What Showrunner does">
+      <div class="container">
+        <p>
+          Drop messy release-named video files on the app. It parses the names, finds the
+          right titles, and files everything into your Jellyfin library —
+          <span class="muted">tidy title folders, season folders, episode names, even your subtitles.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section id="how">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How it works</span>
+          <h2>Three steps from chaos to catalogued</h2>
+          <p>No setup rituals. Drop, glance, done.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Drop</h3>
+            <p>Drag your release-named video files onto Showrunner. It parses the messy filenames and finds the right titles on TheMovieDatabase.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Review</h3>
+            <p>See the whole queue at a glance — each matched title, the exact Jellyfin path it will become, and the staged poster, backdrop and logo. Fix any match or swap art in a click.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Process All</h3>
+            <p>Hit the button. Showrunner renames, stages the artwork, and files everything into your library — folders, seasons and all. Nothing before then.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCREENSHOT / APP WINDOW ===================== -->
+    <section aria-label="A look at the app" style="padding-top:0;">
+      <div class="container">
+        <div class="shot-wrap">
+          <div class="window">
+            <div class="titlebar">
+              <span class="traffic"><i class="r"></i><i class="y"></i><i class="g"></i></span>
+              <span class="title">Showrunner — Queue</span>
+              <span class="process">Process All</span>
+            </div>
+            <div class="win-body">
+              <div class="queue-row">
+                <div class="poster"></div>
+                <div class="qmeta">
+                  <div class="qtitle">The Matrix (1999)</div>
+                  <div class="qpath">Movies/The Matrix (1999) [tmdbid-603]/<b>The Matrix (1999).mkv</b></div>
+                </div>
+                <span class="pill ready">Ready</span>
+              </div>
+              <div class="queue-row">
+                <div class="poster b2"></div>
+                <div class="qmeta">
+                  <div class="qtitle">Breaking Bad — S05E14</div>
+                  <div class="qpath">Shows/Breaking Bad (2008)/Season 05/<b>Breaking Bad S05E14 Ozymandias.mkv</b></div>
+                </div>
+                <span class="pill ready">Ready</span>
+              </div>
+              <div class="queue-row">
+                <div class="poster b3"></div>
+                <div class="qmeta">
+                  <div class="qtitle">Dune (2021)</div>
+                  <div class="qpath">Movies/Dune (2021) [tmdbid-438631]/<b>Dune (2021).mkv</b></div>
+                </div>
+                <span class="pill match">Review match</span>
+              </div>
+              <div class="artwork-strip">
+                <span class="lbl">Artwork</span>
+                <div class="art-thumb poster-t"></div>
+                <div class="art-thumb back-t"></div>
+                <div class="art-thumb logo-t">Logo</div>
+              </div>
+            </div>
+          </div>
+          <p style="text-align:center;color:var(--muted-2);font-size:14px;margin-top:18px;">A representative look at the queue. Placeholder visual.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Features</span>
+          <h2>Everything in its right place</h2>
+          <p>Built around one job: getting your library exactly the way Jellyfin deserves it.</p>
+        </div>
+        <div class="features">
+
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M7 4v16M17 4v16M2.5 9h4.5M2.5 15h4.5M17 9h4.5M17 15h4.5"/></svg></div>
+            <h3>Movies &amp; TV, sorted</h3>
+            <p>Films and shows both. Episodes get proper season folders and episode titles pulled from TMDB — multi-episode files and specials handled too.</p>
+          </div>
+
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2.5h6a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+            <h3>Jellyfin-perfect naming</h3>
+            <p>Tidy “Title (Year)” folders, season folders and episode names — matching Jellyfin's conventions exactly, with optional tags for unambiguous matching.</p>
+          </div>
+
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.8"/><path d="M21 16l-5-5L5 20"/></svg></div>
+            <h3>Artwork, staged for you</h3>
+            <p>Every title gets its poster, backdrop and logo — plus series and season posters for TV. Pick an alternative, or drag your own art straight from Finder.</p>
+          </div>
+
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 11h4M7 14.5h7M14 11h3"/></svg></div>
+            <h3>Subtitles ride along</h3>
+            <p>Your <code>.srt</code>, <code>.ass</code> and other sidecar files move with their video automatically, language suffixes preserved.</p>
+          </div>
+
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Safe by default</h3>
+            <p>Nothing touches your disk until you press Process All. Existing series folders are merged into — new seasons slot in, and nothing is ever overwritten.</p>
+          </div>
+
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+            <h3>Native &amp; private</h3>
+            <p>No Electron, no command line. Sandboxed, and it sends only search queries to find your titles — it collects nothing about you.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NAMING SHOWCASE ===================== -->
+    <section id="naming">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Before &amp; after</span>
+          <h2>Release names in, Jellyfin out</h2>
+          <p>The exact folder structure and filenames Jellyfin wants — generated for you.</p>
+        </div>
+        <div class="xform">
+
+          <div class="xform-card">
+            <div class="tag">Movie</div>
+            <div class="xform-flow">
+              <div class="file">The.Matrix.1999.1080p.BluRay.x264-RARBG.mkv</div>
+              <span class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <div class="file out"><span class="path">Movies/</span><br>The Matrix <span class="tok-year">(1999)</span> <span class="tok-id">[tmdbid-603]</span><span class="path">/</span><br>&nbsp;&nbsp;<b>The Matrix (1999).mkv</b></div>
+            </div>
+          </div>
+
+          <div class="xform-card">
+            <div class="tag">TV Episode</div>
+            <div class="xform-flow">
+              <div class="file">breaking.bad.s05e14.1080p.web-dl.mkv</div>
+              <span class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <div class="file out"><span class="path">Shows/</span><br>Breaking Bad <span class="tok-year">(2008)</span> <span class="tok-id">[tmdbid-1396]</span><span class="path">/</span><br>&nbsp;&nbsp;<span class="path">Season 05/</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>Breaking Bad S05E14 <span class="tok-ep">Ozymandias</span>.mkv</b></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== REQUIREMENTS ===================== -->
+    <section class="reqs">
+      <div class="container">
+        <div class="reqs-inner">
+          <div class="req">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>
+            <div><h4>macOS 26 (Tahoe) or later</h4><p>Older versions are deliberately unsupported.</p></div>
+          </div>
+          <div class="req">
+            <svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"/></svg>
+            <div><h4>Liquid Glass-native</h4><p>Built fresh for the latest macOS — no legacy baggage.</p></div>
+          </div>
+          <div class="req">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-12"/></svg>
+            <div><h4>Works out of the box</h4><p>Metadata and artwork come from TheMovieDatabase.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Good to know</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>Will it mess up my files?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="answer">No. Showrunner shows you the full plan first and changes nothing until you press Process All. It merges into existing folders and never overwrites anything.</div>
+          </details>
+          <details>
+            <summary>Does it handle both movies and TV shows?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="answer">Both. Episodes get proper season folders and titles, and it handles multi-episode files, specials, and subtitle sidecars along the way.</div>
+          </details>
+          <details>
+            <summary>Where do the names and artwork come from?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="answer">From TheMovieDatabase (TMDB). Each title defaults to its main poster, backdrop and logo, and you can swap in any alternative — or drag your own image from Finder onto any artwork card.</div>
+          </details>
+          <details>
+            <summary>Does Showrunner collect my data?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="answer">No. It sends search queries derived from your filenames to TMDB so it can find matches, and collects nothing about you. See the <a href="privacy.html">Privacy</a> page for details.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="#top"><img src="assets/favicon.svg" alt="">Showrunner</a>
+          <p>A native macOS metadata preprocessor for Jellyfin — your library, the way Jellyfin deserves it.</p>
+        </div>
+        <div class="foot-links">
+          <div class="foot-col">
+            <h5>Product</h5>
+            <a href="#how">How it works</a>
+            <a href="#features">Features</a>
+            <a href="#naming">Naming</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="foot-col">
+            <h5>More</h5>
+            <a href="privacy.html">Privacy</a>
+            <span>Mac App Store — soon</span>
+            <!-- TODO: replace with your real support address -->
+            <a href="mailto:hello@showrunner.app">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p class="attribution">This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+        <p>© 2026 Showrunner · Not affiliated with Jellyfin or TheMovieDatabase.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
